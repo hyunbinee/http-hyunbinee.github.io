@@ -1,0 +1,41 @@
+/* 메인이미지 22061036김현빈*/
+#topImg{width: 100%; height: 500px;
+background: url(../css/main4.jpg)no-repeat left center/
+cover; background-attachment : fixed; color: #fff;
+text-align: left;}
+
+#topImg h2{font-size: 100px; padding-top: 350px;
+margin-left: 30px;}
+/* 사이드 메뉴 */
+section#contents{
+  width: 100%; height: 1000px;
+  padding: 30px 30px;
+}
+#main aside#left{
+  width:3%;
+}
+#main aside#left #cat_title{
+  float: left;
+  padding: 12px;
+  color: black;
+
+}
+#main aside#left ul li{
+  color:#666666;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 100px;
+  background-color: white;
+  border-left: solid 1px #cccccc;
+  border-right: solid 1px #cccccc;
+  border-bottom: solid 1px #cccccc;
+}
+
+/* 내용 */
+section#about video{
+  float: left;
+  border-radius: 30px;
+}
+/* 푸터 */
+footer{background-color: #B0C3E4;color: white; height: 60px; padding: 10px; clear: both; text-align: center;}

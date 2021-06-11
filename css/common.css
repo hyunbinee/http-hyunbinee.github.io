@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 100%;
+  color:black;
+
+}
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none; color: inherit;
+}
+.clear{
+  clear: both;
+}
+#wrap{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url(../css/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+[class*="c_"]{
+  float:left;
+  padding:10px;
+}
+[class*="c_"]{
+  width:100%;
+}
+@media only screen and (min-width: 600px){
+  .c_m_1 {width:8.33%;}
+  .c_m_2 {width:16.66%;}
+  .c_m_3 {width:25%;}
+  .c_m_4 {width:33.33%;}
+  .c_m_5 {width:41.66%;}
+  .c_m_6 {width:50%;}
+  .c_m_7 {width:58.33%;}
+  .c_m_8 {width:66.66%;}
+  .c_m_9 {width:75%;}
+  .c_m_10 {width:83.33%;}
+  .c_m_11 {width:91.66%;}
+  .c_m_12 {width:100%;}
+}
+@media only screen and (min-width: 768px){
+  .c_1 {width:8.33%;}
+  .c_2 {width:16.66%;}
+  .c_3 {width:25%;}
+  .c_4 {width:33.33%;}
+  .c_5 {width:41.66%;}
+  .c_6 {width:50%;}
+  .c_7 {width:58.33%;}
+  .c_8 {width:66.66%;}
+  .c_9 {width:75%;}
+  .c_10 {width:83.33%;}
+  .c_11 {width:91.66%;}
+  .c_12 {width:100%;}
+}
+
+/* 헤더스타일 */
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-items: center;
+}
+.navbar_logo{
+  float: left;
+  margin-right: 150px;
+}
+.navbar_menu{
+  display: flex;
+}
+.navbar_menu li{
+  padding: 8px 12px;
+  background:linear-gradient(to bottom, var(--mainColor) 0%,var(--mainColor) 100%);
+  background-position: 0 50%;  /*밑줄 위치 */background-repeat: repeat-x;
+  background-size: 4px 4px;transition: background-size 0.5s;
+}
+:root {--mainColor: white; /*밑줄 색 */}
+.navbar_menu li:hover{
+  background-size: 4px 20px;
+  --mainColor: #d6e1f3;
+}
+.navbar_menu li a{
+  color: #0c70d9;
+}
+.navbar_toggleBtn{
+  display: none;
+  position: absolute;
+  right: 32px;
+  top: 30px;
+}
+@media screen and (max-width: 768px){
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar_menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu li{
+    width: 100%;
+    text-align: center;
+  }
+  .navbar_toggleBtn{
+    display: block;
+  }
+  .navbar_menu.active{
+    display: flex;
+  }
+}
